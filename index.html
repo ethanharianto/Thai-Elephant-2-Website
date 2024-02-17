@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
 
   <title>Thai Elephant 2 Website</title>
   <meta content="" name="description">
@@ -20,6 +20,13 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/lovelo?styles=25962" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css"
+    rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,9 +36,9 @@
   <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!-- Template Main CSS File -->
+  <!-- CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -46,7 +53,7 @@
 
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-phone d-flex align-items-center"><span>(845) 319-6295</span></i>
-        <i id="schedule" class="bi bi-clock d-flex align-items-center ms-4"><span></span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span id="schedule"></span></i>
       </div>
     </div>
   </div>
@@ -56,7 +63,6 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Thai Elephant 2</a></h1>
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -77,6 +83,9 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
+        <div>
+          <img src="/assets/img/white_elephant_logo.png" alt="" class="img-fluid show">
+        </div>
         <div class="col-lg-8">
           <h1>Welcome to <span>Thai Elephant 2</span></h1>
           <h2>Serving authentic Thai food for over a decade!</h2>
@@ -90,6 +99,7 @@
           <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn"></a>
         </div> -->
 
+
       </div>
     </div>
   </section><!-- End Hero -->
@@ -98,15 +108,12 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-          <div class="about-img">
-            <a href="/assets/img/about.jpg" class="glightbox" data-gallery="about">
-              <img src="/assets/img/about.jpg" alt="" class="img-fluid ">
-            </a>
+      <div class="row content">
+
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+          <div class="section-title">
+            <h2>About us</h2>
           </div>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
           <h3>Come dine with us at Thai Elephant 2.</h3>
           <p class="fst-italic">
             A family-owned restaurant that gives your taste buds an experience like no other.
@@ -126,6 +133,13 @@
             prepared to its fullest potential. Come and see for yourselves; we'll welcome you with open arms.
           </p>
         </div>
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="about-img">
+            <a href="/assets/img/about.jpg" class="glightbox" data-gallery="about">
+              <img src="/assets/img/about.jpg" alt="" class="img-fluid ">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End About Section -->
@@ -133,21 +147,18 @@
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
 
-      <div class="container" data-aos="fade-up" style="margin-bottom: 40px;">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Menu</h2>
           <p>Check Out Our Menu</p>
         </div>
-
-        <p class="price d-flex justify-content-center align-items-center">Prices are subject to change without notice.
-        </p>
-        <div class="d-flex justify-content-center align-items-center">
-          <a class="menu-btn " href="https://drive.google.com/file/d/1AXSgqarTd4YUVmUEWZe5rz2Gqs8GWHJE/preview">Menu
-            PDF</a>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <p class="menu-desc">Click and swipe to go through our digital menu.
+          </p>
+          <p class="price">Prices are subject to change without notice.
+          </p>
         </div>
       </div>
-
-
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-4">
@@ -157,9 +168,8 @@
               </a>
             </div>
           </div>
+
         </div>
-
-
         <a href="/assets/img/menu/menu-1.jpg" class="glightbox" data-gallery="menu-item">
           <img src="/assets/img/menu/menu-1.jpg" alt="" class="img-fluid hide">
         </a>
@@ -179,7 +189,15 @@
         <a href="/assets/img/menu/menu-5.jpg" class="glightbox" data-gallery="menu-item">
           <img src="/assets/img/menu/menu-5.jpg" alt="" class="img-fluid hide">
         </a>
-
+      </div>
+      <div class="topspace">
+        <p class="price d-flex justify-content-center align-items-center">Can't swipe through the menu? Use the PDF
+          below.
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="menu-btn" href="https://drive.google.com/file/d/1AXSgqarTd4YUVmUEWZe5rz2Gqs8GWHJE/preview">Menu
+            PDF</a>
+        </div>
       </div>
     </section><!-- End Menu Section -->
 
@@ -190,7 +208,7 @@
           <h2>Gallery</h2>
         </div>
       </div>
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="gallery-items" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
@@ -248,8 +266,10 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>2693 Route 22, Patterson, NY 12563</p>
+              <a href="https://maps.app.goo.gl/M55Y55sVJSpPuTvVA"></a>
+                <h4>Location:</h4>
+                <p>2693 Route 22, Patterson, NY 12563</p>
+              </a>
             </div>
             <div class="open-hours">
               <i class="bi bi-clock"></i>
@@ -286,15 +306,12 @@
     <!-- <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -317,7 +334,6 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <!-- <script src="/assets/vendor/aos/aos.js"></script> -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -336,18 +352,18 @@
 
     // Define the schedule for each day
     var schedules = [
-        " Sun: 1PM-8PM", // Sunday (index 0)
-        " Tu-Th: 11AM-8PM", // Monday (index 1)
-        " Tu-Th: 11AM-8PM", // Tuesday (index 2)
-        " Tu-Th: 11AM-8PM", // Wednesday (index 3)
-        " Fri-Sat: 11AM-9PM", // Thursday (index 4)
-        " Fri-Sat: 11AM-9PM", // Friday (index 5)
-        " Fri-Sat: 11AM-9PM"     // Saturday (index 6)
+      "  Sun: 1PM-8PM", // Sunday (index 0)
+      "  Tu-Th: 11AM-8PM", // Monday (index 1)
+      "  Tu-Th: 11AM-8PM", // Tuesday (index 2)
+      "  Tu-Th: 11AM-8PM", // Wednesday (index 3)
+      "  Fri-Sat: 11AM-9PM", // Thursday (index 4)
+      "  Fri-Sat: 11AM-9PM", // Friday (index 5)
+      "  Fri-Sat: 11AM-9PM"     // Saturday (index 6)
     ];
 
     // Set the schedule based on the current day
     document.getElementById("schedule").innerHTML = schedules[today];
-</script>
+  </script>
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
