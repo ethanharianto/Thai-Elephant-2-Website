@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 :root {
 
   /**
@@ -15,6 +17,7 @@
   --smoky-black: hsla(0, 3%, 7%, 1);
   --eerie-black: hsla(180, 2%, 8%, 1);
   --gray: rgb(80, 80, 80);
+  --light-gray: rgb(120, 120, 120);
   --white: hsla(0, 0%, 100%, 1);
 
   /**
@@ -101,6 +104,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+h12 {
+  font-size: calc(0.8rem);
+  color: var(--light-gray)
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #0c0b09;
